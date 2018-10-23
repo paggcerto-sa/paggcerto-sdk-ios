@@ -20,7 +20,7 @@ Para utilizar todos os recursos do SDK é necessário fazer alguns ajustes inici
 
 ### Instancie o SDK em sua aplicação
 
-Faça o download do SDK clicando [aqui](https://github.com/paggcerto-sa/paggcerto-sdk-android/raw/master/paggcertosdk-1.0.0.aar).
+Faça o download do SDK clicando [aqui](https://github.com/paggcerto-sa/paggcerto-sdk-ios/raw/master/PaggcertoSDK.framework.zip).
 
 Com o seu projeto aberto no Xcode clique no arquivo principal do projeto, abra a aba General e adicione o arquivo ``PaggcertoSDK`` em Embedded Binaries.
 
