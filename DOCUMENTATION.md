@@ -158,3 +158,32 @@ Para utilizar essa classe certifique-se que a SDK foi ativada com o método ```P
 #### Consultar saldo de repasse
 ```balance(completion: @escaping (Error?, String?, Pagg_Balance?) -> ())```
 [Detalhes](https://desenvolvedor.paggcerto.com.br/v2/payments/#operation/consultar-saldo-de-repasse)
+
+#### Histórico de repasses do split
+```splitterTransfers(filter: Pagg_SplitterTransferFilter, completion: @escaping (Error?, String?, Pagg_TransferList?) -> ())```
+[Detalhes](https://desenvolvedor.paggcerto.com.br/v2/payments/#operation/historico-de-repasses-do-split)
+
+## Métodos de cobrança
+
+Essa seção irá abordar todos os métodos da SDK disponíveis para a API de cobrança.
+
+De forma semelhante a API de pagamentos, os métodos dessa API estarão disponíveis na classe ```BillingNetwork```.
+Para utilizar essa classe certifique-se que a SDK foi ativada com o método ```PaggcertoSDK.activate()```.
+
+#### Gerar cobrança
+```createBilling(billingRequest: Pagg_BillingRequest, completion: @escaping (Error?, String?, Pagg_Billing?) -> ())```
+[Detalhes](https://desenvolvedor.paggcerto.com.br/v1/billing/#operation/gerar-cobranca)
+
+#### Listar cobranças
+```billings(filter: Pagg_BillingFilter, completion: @escaping (Error?, String?, Pagg_BillingList?) -> ())```
+[Detalhes](https://desenvolvedor.paggcerto.com.br/v1/billing/#operation/listar-cobrancas)
+
+#### Pesquisar cobranca
+```findBilling(billingId: String, completion: @escaping (Error?, String?, Pagg_Billing?) -> ())```
+[Detalhes](https://desenvolvedor.paggcerto.com.br/v1/billing/#operation/pesquisar-cobranca)
+
+#### Cancelar cobrança
+```cancelBilling(billingId: String, completion: @escaping (Error?, String?, Bool?) -> ())```
+[Detalhes](https://desenvolvedor.paggcerto.com.br/v1/billing/#operation/cancelar-cobranca)
+
+
